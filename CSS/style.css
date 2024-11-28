@@ -1,0 +1,108 @@
+/* Colores y estilos generales */
+body {
+  background: linear-gradient(45deg, rgba(255, 94, 77, 0.8), rgba(0, 174, 255, 0.8)); /* Degradado rojo-naranja a azul */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  color: #fff;
+}
+
+/* Cabecera */
+.header {
+  background: linear-gradient(45deg, #9b2d91, #d953c5); /* Degradado de morado a rosa vibrante */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: calc(100vh - 160px); /* Ajuste para cabecera y pie de página */
+  padding: 20px;
+}
+
+/* Caja */
+.box {
+  width: 320px;
+  height: 320px;
+  background: linear-gradient(45deg, #1c92d2, #f2fcfe); /* Degradado azul a blanco hielo */
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #f2fcfe, #1c92d2); /* Inversión del degradado al pasar el ratón */
+}
+
+.box h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Botón con degradado */
+.toggle-button {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #ff6a00, #ffcc00); /* Degradado naranja-amarillo */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.4s ease, color 0.4s ease;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.toggle-button:hover {
+  background: linear-gradient(45deg, #ffcc00, #ff6a00); /* Inversión del degradado */
+  color: #000;
+}
+
+/* Contenido dinámico oculto */
+.content.hidden {
+  display: none;
+}
+
+.content {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Imagen responsiva */
+.responsive-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Pie de página */
+.footer {
+  background: linear-gradient(45deg, #2f2f2f, #5e5e5e); /* Degradado gris oscuro a gris claro */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
